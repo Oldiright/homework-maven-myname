@@ -50,10 +50,12 @@
         <!-- Maven Assembly Plugin -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
+
             <artifactId>maven-assembly-plugin</artifactId>
             <version>${maven.assambly.version}</version>
 
             <configuration>
+                <appendAssemblyId>false</appendAssemblyId>
                 <archive>
                     <manifest>
                         <addClasspath>true</addClasspath>
